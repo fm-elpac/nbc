@@ -1,0 +1,21 @@
+[package]
+name = "nbs"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+
+authors = ["secext2022 <secext2022@outlook.com>"]
+repository = "https://github.com/fm-elpac/nbc"
+description = "nb_lang LSP server (nbs)"
+keywords = ["nb_lang", "nbc"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+libnbc = { path = "../libnbc" }
+
+log = "^0.4.20"
+env_logger = "^0.10.0"
+
+[build-dependencies]
+built = { version = "^0.6.1" }
+vergen = { version = "^8.2.4", features = ["build", "git", "gitcl"] }

@@ -1,0 +1,15 @@
+[workspace]
+
+members = [
+  "libnbc",
+  "nbc",
+  "nbf",
+  "nbs",
+]
+
+# edition = "2021"
+resolver = "2"
+
+[profile.release]
+lto = true
+strip = "debuginfo"
