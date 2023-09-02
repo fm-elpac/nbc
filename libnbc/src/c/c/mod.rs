@@ -42,8 +42,14 @@ pub const 特殊字符0: char = '0';
 pub const 特殊字符9: char = '9';
 /// `a` 特殊字符: 用于数字
 pub const 特殊字符A: char = 'a';
+/// `b` 特殊字符: 用于数字 `0b`
+pub const 特殊字符B: char = 'b';
 /// `f` 特殊字符: 用于数字
 pub const 特殊字符F: char = 'f';
+/// `o` 特殊字符: 用于数字 `0o`
+pub const 特殊字符_O: char = 'o';
+/// `x` 特殊字符: 用于数字 `0x`
+pub const 特殊字符X: char = 'x';
 /// `.` 特殊字符: 用于数字
 pub const 特殊字符点: char = '.';
 /// `_` 特殊字符: 用于数字
@@ -255,5 +261,3 @@ pub const 内置运算符小于: &'static str = "<";
 pub const 内置运算符大于等于: &'static str = ">=";
 /// `<=` 比较运算符
 pub const 内置运算符小于等于: &'static str = "<=";
-
-// TODO
