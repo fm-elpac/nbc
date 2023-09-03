@@ -24,10 +24,24 @@ pub struct 源文件 {
     pub 哈希: String,
 }
 
+impl Default for 源文件 {
+    fn default() -> Self {
+        Self {
+            编号: 0,
+            路径: "".into(),
+            哈希: "".into(),
+        }
+    }
+}
+
 /// 一个模块: 一个源文件对应一个模块
 #[derive(Debug, Clone)]
 pub struct 模块 {
+    /// 对应的包编号
+    pub 包号: u64,
+    /// 对应的源文件
     pub 文件: 源文件,
+    /// 抽象语法树
     pub 内容: Box<语法树>,
 }
 
@@ -57,4 +71,14 @@ pub struct 源代码位置 {
     pub 开始: (u32, u32),
     /// 结束位置: (行号, 列号)
     pub 结束: (u32, u32),
+}
+
+impl Default for 源代码位置 {
+    fn default() -> Self {
+        Self {
+            编号: 0,
+            开始: (0, 0),
+            结束: (0, 0),
+        }
+    }
 }

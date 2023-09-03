@@ -8,6 +8,10 @@ pub const 特殊字符换行: char = '\n';
 pub const 特殊字符空格: char = ' ';
 /// `"` 特殊字符: 双引号
 pub const 特殊字符引号: char = '"';
+/// `\` 特殊字符: 反斜杠
+pub const 特殊字符转义: char = '\\';
+/// `n` 特殊字符: 用于字符串转义 (`\n`)
+pub const 特殊字符N: char = 'n';
 /// `#` 特殊字符: 注释
 pub const 特殊字符注释: char = '#';
 /// `(` 特殊字符: 小括号
@@ -22,8 +26,6 @@ pub const 特殊字符冒号: char = ':';
 pub const 特殊字符等号: char = '=';
 /// `[` 特殊字符: 中括号
 pub const 特殊字符中括号左: char = '[';
-/// `\` 特殊字符: 反斜杠
-pub const 特殊字符转义: char = '\\';
 /// `]` 特殊字符: 中括号
 pub const 特殊字符中括号右: char = ']';
 /// ` 特殊字符: 反引号
@@ -58,6 +60,9 @@ pub const 特殊字符下划线: char = '_';
 pub const 特殊字符E: char = 'e';
 /// `-` 特殊字符: 用于数字
 pub const 特殊字符减: char = '-';
+
+/// 允许的行首最大缩进长度
+pub const 最大缩进长度: usize = 80;
 
 // 关键词
 

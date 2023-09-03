@@ -9,12 +9,15 @@ pub mod at;
 /// 编译器前端的编译设置
 #[derive(Debug, Clone)]
 pub struct 编译前端设置 {
-    // TODO
+    // 标准库的路径
+    pub 标准库: String,
 }
 
 impl Default for 编译前端设置 {
     fn default() -> Self {
-        Self {}
+        Self {
+            标准库: "".into()
+        }
     }
 }
 
